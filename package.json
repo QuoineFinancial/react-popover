@@ -21,11 +21,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/littlebits/react-popover.git"
+    "url": "https://github.com/QuoineFinancial/react-popover.git"
   },
   "author": "Jason Kuhrt <jasonkuhrt@me.com> (http://jasonkuhrt.com/)",
-  "name": "react-popover",
-  "homepage": "https://github.com/littlebits/react-popover",
+  "name": "@quoine/react-popover",
+  "homepage": "https://github.com/QuoineFinancial/react-popover",
   "main": "build/index.js",
   "description": "A specification backed popover for react",
   "devDependencies": {
