@@ -1,7 +1,7 @@
 {
   "license": "MIT",
   "version": "0.4.14",
-  "private": "false",
+  "private": false,
   "scripts": {
     "clean": "rm -rf build",
     "build-examples": "yarn run clean && webpack",
