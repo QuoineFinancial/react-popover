@@ -11,23 +11,19 @@ toc::[]
 
 
 
+## React Versions Support
+
+`react-popover` `>= 0.5.0` supports React 16 while `react-popover` `< 0.5.0` works with React `15.x.x` and likely lower. There is no plan to support older versions of this library with back-ported patches and PRs for that purpose are not welcome since it increases maintenance for the authors.
+
 ## Installation
 
 ```
-npm install --save react-popover
+yarn add react-popover
 ```
 
+## Examples
 
-
-## Demos
-
-* link:https://littlebits.github.io/react-popover/build/playground.html[Playground]
-* link:https://littlebits.github.io/react-popover/build/rows.html[Rows]
-* link:https://littlebits.github.io/react-popover/build/jsx.html[Using JSX]
-
-To run demos locally execute `npm start`. If you do not see logs in the console refresh the browser once (https://github.com/littlebits/react-popover/issues/35).
-
-
+Look at the link:https://littlebits.github.io/react-popover[stories in our storybook].
 
 ## API
 
@@ -38,7 +34,7 @@ To run demos locally execute `npm start`. If you do not see logs in the console 
 ---
 
 ##### `body :: Node | Array Node`
-The `popover` content. Content is rooted (becomes children of) `.Popover-body` and thus `body` can be a single `node` _or an array of `nodes`_.
+The `popover` content.
 
 ---
 
@@ -89,8 +85,12 @@ Defines the size of the tip pointer.  Use .01 to disable tip.  Defaults to '7'.
 
 ---
 
-#### `target :: React Element`
+#### `target :: ReactElement`
 
 - The React Element that this popover will orient itself around. `target` `rendering tree` is unaffected. `Popover` _will_ become its `owner`.
 
+---
 
+#### `appendTarget :: DOMElement`
+
+- The DOM element which the https://reactjs.org/docs/portals.html[portal] will mount into. In effect the popover will become an appended child of this DOM element. Defaults to 'document.body'.
